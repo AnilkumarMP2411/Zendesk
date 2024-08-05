@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/@zendeskgarden/css-bedrock@7.0.21,npm/@zendeskgarden/css-utilities@4.3.0">
+<!-- added -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+<title>Dynamic Content Tabs</title>
+
+
+</head>
+<body>
+  <button onclick="window.location.reload();" style="background-color: green; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Refresh</button>
+  <div class="tab-container">
+    <div class="tab customers" onclick="loadTabContent('Customers',userID, userEmail, userPhoneNumber, userBrandName, user_premium, ticket_ID)">Customers</div>
+   <div class="tab orders" onclick="loadTabContent('Orders',userID, userEmail, userPhoneNumber, userBrandName, user_premium, ticket_ID,customer_id)">Orders</div>
+   <div class="tab payments" onclick="loadTabContent('Payments',userID, userEmail, userPhoneNumber, userBrandName, user_premium, ticket_ID)">Payments</div>
+   <div class="tab returns" onclick="loadTabContent('Returns',userID, userEmail, userPhoneNumber, userBrandName, user_premium, ticket_ID)">Returns</div>
+   <div class="tab refund" onclick="loadTabContent('Refund',userID, userEmail, userPhoneNumber, userBrandName, user_premium, ticket_ID)">Refund</div> 
+   <!-- <div class="tab adminpanel pink-tab" onclick="loadTabContent('AdminPanel',userID, userEmail, userPhoneNumber, userBrandName, user_premium, ticket_ID)">AdminPanel</div> -->
+   <div class="additional-button"><a href="https://admin-panel.nykaa.com" target="_blank">Nykaa Admin Panel</a></div>
+
+ </div>
+ <div id="tabContent"></div>
+ 
+ <div id="popupContainer" class="returnsTabDiv modal">
+  <div class="modal-content">
+    <div class="top-bar">
+      <span class="close">&times;</span>
+    </div>
+
+    <div class="block1">
+    </div>
+
+    <div class="block2">
+    </div>
+
+    <div class="block3">
+    </div>
+    <div class="block4">
+    </div>
+
+    <div class="block5">
+    </div>
+  </div>
+</div>
+
+
+<script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
+
+<script src="main.js"></script>
+    <!-- added -->
+  
+
+</body>
+</html>
+
+
+

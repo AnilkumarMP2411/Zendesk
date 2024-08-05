@@ -1,0 +1,28 @@
+{
+  "name": "Update Requster Email",
+  "author": {
+    "name": "RanyaRishitha",
+    "email": "ranyarishitha@gmail.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      }
+    }
+  },
+  "domainWhitelist": ["api.nykaa.com"],
+  "parameters": [
+    {
+      "name": "apiToken",
+       "type": "text",
+       "secure": true,
+       "required": true
+    }
+  ],
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}
